@@ -7,9 +7,9 @@ client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 st.title("수준별 영어 문장 생성기")
 
 # --- 입력 ---
-word = st.text_input("문장 생성에 사용할 영단어", "summer")
-level = st.text_input("대상 학교급/학년", "고1")
-count = st.text_input("문장 생성 개수", "2")
+word = st.text_input("문장 생성에 사용할 영단어")
+level = st.text_input("대상 학교급/학년")
+count = st.text_input("문장 생성 개수")
 
 # --- 실행 버튼 ---
 if st.button("생성하기"):
