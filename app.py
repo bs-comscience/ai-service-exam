@@ -13,10 +13,16 @@ count = st.text_input("문장 생성 개수", "2")
 
 # --- 실행 버튼 ---
 if st.button("생성하기"):
-
+    level_to_lexile_map = {
+        "중1": "Lexile=600L~800L",
+        "중2": "Lexile=700L~900L",
+        "중3": "Lexile=800L~1000L",
+        "고1": "Lexile=1000L~1150L",
+        "고2": "Lexile=1100L~1200L",
+        "고3": "Lexile=1200L~1300L",
+    }
     # 원본 코드의 규칙 그대로 유지
-    if level == '고1':
-        level = 'Lexile=1000L~1150L'
+    lexile_level = level_to_lexile_map[level]
 
     prompt = f"영단어 {word}를 사용하여 어휘수준 {level}에 맞는 문장 rmsi{count}개 생성"
 
