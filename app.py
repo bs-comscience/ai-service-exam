@@ -4,7 +4,7 @@ from openai import OpenAI
 # --- API KEY ---
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
-st.title("수준별 영어 문장 생성기")
+st.title("수준별 영어 문장 만들기")
 
 # --- 입력 ---
 word = st.text_input("문장 생성에 사용할 영단어")
@@ -15,7 +15,7 @@ level = st.selectbox("대상 학교급/학년", school_levels)
 count = st.text_input("문장 생성 개수")
 
 # --- 실행 버튼 ---
-if st.button("생성하기"):
+if st.button("문장 만들기"):
     level_to_lexile_map = {
         "중1": "Lexile=600L~800L",
         "중2": "Lexile=700L~900L",
