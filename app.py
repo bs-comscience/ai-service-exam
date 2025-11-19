@@ -8,7 +8,10 @@ st.title("수준별 영어 문장 생성기")
 
 # --- 입력 ---
 word = st.text_input("문장 생성에 사용할 영단어")
-level = st.text_input("대상 학교급/학년")
+school_levels = ["중1", "중2", "중3", "고1", "고2", "고3"]
+
+# selectbox로 변경
+level = st.selectbox("대상 학교급/학년", school_levels)
 count = st.text_input("문장 생성 개수")
 
 # --- 실행 버튼 ---
