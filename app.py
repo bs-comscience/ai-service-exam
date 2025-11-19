@@ -11,7 +11,7 @@ word = st.text_input("문장 생성에 사용할 영단어")
 school_levels = ["중1", "중2", "중3", "고1", "고2", "고3"]
 
 # selectbox로 변경
-level = st.selectbox("대상 학교급/학년", school_levels)
+level = st.selectbox("대상 학교급/학년(어휘 수준)", school_levels)
 
 grammer_list = [ "to 부정사", "동명사", "비교급", "최상급", "원급 비교", "관계대명사"]
 grammer = st.multiselect("핵심 문법(중복 선택 가능)", grammer_list)
