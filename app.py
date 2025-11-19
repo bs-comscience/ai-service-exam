@@ -7,7 +7,7 @@ client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 st.title("수준별 영어 문장 만들기")
 
 # --- 입력 ---
-word = st.text_input("문장 생성에 사용할 영단어")
+word = st.text_input("문장 생성에 사용할 영단어", placeholder="vacation")
 school_levels = ["중1", "중2", "중3", "고1", "고2", "고3"]
 
 # selectbox로 변경
