@@ -12,8 +12,13 @@ school_levels = ["중1", "중2", "중3", "고1", "고2", "고3"]
 
 # selectbox로 변경
 level = st.selectbox("대상 학교급/학년", school_levels)
+
+grammer_list = [ "to 부정사", "관계대명사"]
+grammer = st.multiselect("핵심 문법(중복 선택 가능)", grammer_list)
+
+
+
 count = st.text_input("문장 생성 개수")
-grammer = st.text_input("핵심 문법")
 
 # --- 실행 버튼 ---
 if st.button("문장 만들기"):
