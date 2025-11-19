@@ -4,7 +4,7 @@ from openai import OpenAI
 # --- API KEY ---
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
-st.title("문장 생성기(수정)")
+st.title("수준별 영어 문장 생성기")
 
 # --- 입력 ---
 word = st.text_input("문장 생성에 사용할 영단어", "summer")
