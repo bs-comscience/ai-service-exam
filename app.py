@@ -41,7 +41,7 @@ if st.button("문장 만들기"):
     response = client.chat.completions.create(
         model="gpt-4.1",
         messages=[
-            {"role": "system", "content": "문장 생성, 번호 부여, 영단어는 bold, red 처리, 다른 답은 하지 말것"},
+            {"role": "system", "content": "문장 생성, 번호 부여, 영단어는 bold 처리, 다른 답은 하지 말것"},
             {"role": "user", "content": prompt},
         ]
     )
