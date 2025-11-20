@@ -12,7 +12,7 @@ st.set_page_config(
 
 st.title("영어 문장 만들기")
 # --- 입력 ---
-word = st.text_input("문장 생성에 사용할 영단어", placeholder="vacation") or "vacation"
+word = st.text_input("문장 생성에 사용할 영단어", placeholder="vacation", value="vacation")
 school_levels = ["중1", "중2", "중3", "고1", "고2", "고3"]
 
 # selectbox로 변경
@@ -21,7 +21,7 @@ level = st.selectbox("대상 학교급/학년(어휘 수준)", school_levels)
 grammer_list = [ "to 부정사", "동명사", "비교급", "최상급", "원급 비교", "관계대명사"]
 grammer = st.multiselect("핵심 문법(중복 선택 가능)", grammer_list)
 
-count = st.text_input("문장 생성 개수", placeholder="3") or "3"
+count = st.text_input("문장 생성 개수", placeholder="3", value="3")
 
 # --- 실행 버튼 ---
 if st.button("문장 만들기"):
