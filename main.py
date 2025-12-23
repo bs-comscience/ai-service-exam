@@ -10,10 +10,10 @@ st.set_page_config(
 st.write("융합탐구반 온라인 전시 사이트입니다.")
 
 rows = [
-    ("김학생", "Streamlit 공식 사이트", "https://streamlit.io"),
-    ("이학생", "Streamlit 문서", "https://docs.streamlit.io"),
-    ("박학생", "GitHub 저장소", "https://github.com"),
-    ("최학생", "OpenAI 홈페이지", "https://openai.com"),
+    ("1404 김예준", "영어 문장 자동 생성", "https://streamlit.io"),
+    ("1723 정홍재", "인터넷 작명소", "https://docs.streamlit.io"),
+    ("1825 조현욱", "화학....", "https://github.com"),
+    ("1723 정홍재", "남일사랑 Quiz!", "https://openai.com"),
 ]
 
 st.markdown("""
