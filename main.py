@@ -14,6 +14,12 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+import pandas as pd
+
+df = pd.DataFrame({"설명": ["여기에 설명을 넣습니다."]})
+
+st.dataframe(df, use_container_width=True)
+
 rows = [
     ("1404 김예준", "원하는대로, 영어 문장 메이커", "https://generater-be5smgtamu2umwjqhgkltp.streamlit.app/"),
     ("1723 정홍재", "대박 예감, 인터넷 작명소", "https://restart-76ssvvcksjhxq8rqb4xshr.streamlit.app/"),
