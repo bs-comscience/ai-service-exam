@@ -8,7 +8,7 @@ st.set_page_config(
 )
 
 st.markdown(
-    "<div style='text-align:center; font-weight:600; font-size:1.1rem;'>융합탐구반 온라인 전시 사이트</div>",
+    "<div style='text-align:center; font-weight:600; font-size:1.1rem;'>융합탐구반 온라인 전시</div>",
     unsafe_allow_html=True
 )
 
