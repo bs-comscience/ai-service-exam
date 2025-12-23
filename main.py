@@ -13,7 +13,7 @@ rows = [
     ("1404 김예준", "영어 문장 자동 생성", "https://generater-be5smgtamu2umwjqhgkltp.streamlit.app/"),
     ("1723 정홍재", "인터넷 작명소", "https://restart-76ssvvcksjhxq8rqb4xshr.streamlit.app/"),
     ("1825 조현욱", "화학....", "https://github.com"),
-    ("1723 정홍재", "남일사랑 Quiz!\n퀴즈를 다 풀면 선착순으로 상품을 증정합니다. 별관 2층 컴퓨터실습실!", "https://openai.com"),
+    ("1723 정홍재", "남일사랑 Quiz! (선착순 상품 증정, 별관 2층 컴퓨터실습실)", "https://openai.com"),
 ]
 
 st.markdown("""
