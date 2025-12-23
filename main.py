@@ -16,7 +16,7 @@ st.markdown(
 
 import pandas as pd
 
-df = pd.DataFrame([[" "]], columns=[" "])
+df = pd.DataFrame([["ㄹㅇㄹㅇㄹ "]], columns=[" "])
 st.table(df)
 
 rows = [
