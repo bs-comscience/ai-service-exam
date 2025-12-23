@@ -14,17 +14,18 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+import streamlit as st
+
 html = """
 <div style="display: flex; justify-content: center; margin-top: 10px; margin-bottom: 10px;">
-  <table style="border-collapse: collapse;">
+  <table style="border-collapse: collapse; width: 90%;">
     <tr>
       <td style="
           border: 1px solid #cccccc;  /* 연한 테두리 */
           padding: 15px;
-          width: 300px;
           background-color: #ffffff;
           font-size: 16px;
-          text-align: center;        /* 안의 글씨도 가운데 */
+          text-align: center;        /* 텍스트 가운데 */
       ">
         여기에 설명을 적으세요.
       </td>
@@ -34,6 +35,7 @@ html = """
 """
 
 st.markdown(html, unsafe_allow_html=True)
+
 
 
 rows = [
