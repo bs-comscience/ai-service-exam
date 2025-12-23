@@ -30,6 +30,10 @@ html = """
       </td>
     </tr>
   </table>
+</div>
+"""
+
+st.markdown(html, unsafe_allow_html=True)
 
 
 rows = [
