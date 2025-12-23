@@ -16,17 +16,11 @@ rows = [
     ("최학생", "OpenAI 홈페이지", "https://openai.com"),
 ]
 
-# 헤더 행
-h1, h2, h3 = st.columns([2, 4, 2])
-h1.markdown("**작성자**")
-h2.markdown("**설명**")
-h3.markdown("**링크**")
-
-st.divider()
-
-# 데이터 행 (4행)
 for author, desc, link in rows:
-    c1, c2, c3 = st.columns([2, 4, 2])
-    c1.write(author)
-    c2.write(desc)
-    c3.link_button("바로가기", link)
+    col1, col2, col3 = st.columns(
+        [1.2, 2.8, 1],   # 👉 모바일 기준으로 비율 조정
+        gap="small"
+    )
+    col1.write(author)
+    col2.write(desc)
+    col3.link_button("이동", link)
