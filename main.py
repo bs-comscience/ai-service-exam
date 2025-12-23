@@ -13,7 +13,7 @@ st.markdown(
 )
 
 rows = [
-    ("1404 김예준", "사용자 요구에 맞게 원하는대로, 영어 문장 메이커", "https://generater-be5smgtamu2umwjqhgkltp.streamlit.app/"),
+    ("1404 김예준", "원하는대로, 영어 문장 메이커", "https://generater-be5smgtamu2umwjqhgkltp.streamlit.app/"),
     ("1723 정홍재", "대박 예감, 인터넷 작명소", "https://restart-76ssvvcksjhxq8rqb4xshr.streamlit.app/"),
     ("1825 조현욱", "화학....", "https://github.com"),
     ("1723 정홍재", "남일 사랑 Test~!!! (선착순 상품 증정, 별관2층 컴퓨터실)", "https://openai.com"),
