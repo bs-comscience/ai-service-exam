@@ -16,35 +16,49 @@ rows = [
     ("1723 정홍재", "남일사랑 Quiz!", "https://openai.com"),
 ]
 
-
 st.markdown("""
 <style>
+/* 전체 행 */
 .rowline{
   display:flex;
   align-items:center;
   gap:8px;
   width:100%;
   white-space:nowrap;
+  padding:6px 4px;
+  border-bottom:1px solid rgba(0,0,0,0.08);   /* ✅ 행 구분선 */
 }
 
-/* ✅ 작성자: 내용만큼 늘어나되 너무 커지진 않게 */
+/* 마지막 행 선 제거 */
+.rowline:last-child{
+  border-bottom:none;
+}
+
+/* 작성자 */
 .rowline .author{
-  flex:0 1 auto;               /* 고정폭 제거 */
-  max-width:120px;             /* 최대 폭만 제한 */
+  flex:0 1 auto;
+  max-width:120px;
   overflow:hidden;
   text-overflow:ellipsis;
   font-size:0.85rem;
 }
 
-/* 설명은 남는 공간 전부 사용 */
+/* 설명 */
 .rowline .desc{
   flex:1 1 auto;
   overflow:hidden;
   text-overflow:ellipsis;
   font-size:0.85rem;
+  padding-left:6px;
+  border-left:1px solid rgba(0,0,0,0.05);     /* ✅ 열 구분 느낌 */
 }
 
-/* 링크 버튼 */
+/* 링크 */
+.rowline .link{
+  padding-left:6px;
+  border-left:1px solid rgba(0,0,0,0.05);     /* ✅ 열 구분 느낌 */
+}
+
 .rowline .link a{
   display:inline-block;
   padding:4px 10px;
