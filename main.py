@@ -14,14 +14,21 @@ st.link_button("영어 문장 자동 생성", "https://www.naver.com")
 st.link_button("화학....", "https://www.naver.com")
 st.link_button("남일사랑 Quiz~!", "https://www.naver.com")
 
-rows = [
-    ("Streamlit 공식 사이트", "https://streamlit.io"),
-    ("Streamlit 문서", "https://docs.streamlit.io"),
-    ("GitHub", "https://github.com"),
-    ("OpenAI", "https://openai.com"),
-]
+import pandas as pd
 
-for desc, link in rows:
-    col1, col2 = st.columns([3, 2])
-    col1.write(desc)
-    col2.link_button("바로가기", link)
+df = pd.DataFrame({
+    "설명": [
+        "Streamlit 공식 사이트",
+        "Streamlit 문서",
+        "GitHub",
+        "OpenAI"
+    ],
+    "링크": [
+        "https://streamlit.io",
+        "https://docs.streamlit.io",
+        "https://github.com",
+        "https://openai.com"
+    ]
+})
+
+st.table(df)
