@@ -16,28 +16,49 @@ rows = [
     ("최학생", "OpenAI 홈페이지", "https://openai.com"),
 ]
 
-# 🔧 모바일 한 줄 유지용 CSS
 st.markdown("""
 <style>
-/* 텍스트 줄바꿈 방지 */
-div[data-testid="stMarkdownContainer"] p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 0.85rem;
+.rowline{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  width:100%;
+  white-space:nowrap;          /* ✅ 줄바꿈 금지 */
 }
 
-/* link_button 최소화 */
-a[data-testid="stLinkButton"] {
-    padding: 0.25rem 0.5rem !important;
-    font-size: 0.75rem !important;
-    min-width: unset !important;
+.rowline .author{
+  flex:0 0 64px;               /* 작성자 칸 고정폭 */
+  overflow:hidden;
+  text-overflow:ellipsis;
+  font-size:0.85rem;
+}
+
+.rowline .desc{
+  flex:1 1 auto;               /* 설명은 남는 공간 */
+  overflow:hidden;
+  text-overflow:ellipsis;      /* ✅ 넘치면 말줄임 */
+  font-size:0.85rem;
+}
+
+.rowline .link a{
+  display:inline-block;
+  padding:4px 10px;
+  border:1px solid rgba(49,51,63,0.2);
+  border-radius:10px;
+  text-decoration:none;
+  font-size:0.75rem;
 }
 </style>
 """, unsafe_allow_html=True)
 
 for author, desc, link in rows:
-    c1, c2, c3 = st.columns([1, 3, 1], gap="small")
-    c1.write(author)
-    c2.write(desc)
-    c3.link_button("링크", link)
+    st.markdown(
+        f"""
+        <div class="rowline">
+          <div class="author">{author}</div>
+          <div class="desc" title="{desc}">{desc}</div>
+          <div class="link"><a href="{link}" target="_blank">링크</a></div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
