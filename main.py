@@ -6,7 +6,9 @@ st.set_page_config(
     page_title="융합탐구반 온라인 전시 사이트",
     page_icon="mark.png"
 )
-st.link_button("네이버 가기", "https://www.naver.com")
 
 
-st.link_button("네이버 가기", "https://www.naver.com")
+st.link_button("인터넷 작명소", "https://www.naver.com")
+st.link_button("영어 문장 자동생성", "https://www.naver.com")
+st.link_button("화학....", "https://www.naver.com")
+st.link_button("남일사랑 Quiz~!", "https://www.naver.com")
