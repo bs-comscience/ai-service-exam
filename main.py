@@ -16,6 +16,7 @@ rows = [
     ("1723 정홍재", "남일사랑 Quiz!", "https://openai.com"),
 ]
 
+
 st.markdown("""
 <style>
 .rowline{
@@ -23,23 +24,27 @@ st.markdown("""
   align-items:center;
   gap:8px;
   width:100%;
-  white-space:nowrap;          /* ✅ 줄바꿈 금지 */
+  white-space:nowrap;
 }
 
+/* ✅ 작성자: 내용만큼 늘어나되 너무 커지진 않게 */
 .rowline .author{
-  flex:0 0 64px;               /* 작성자 칸 고정폭 */
+  flex:0 1 auto;               /* 고정폭 제거 */
+  max-width:120px;             /* 최대 폭만 제한 */
   overflow:hidden;
   text-overflow:ellipsis;
   font-size:0.85rem;
 }
 
+/* 설명은 남는 공간 전부 사용 */
 .rowline .desc{
-  flex:1 1 auto;               /* 설명은 남는 공간 */
+  flex:1 1 auto;
   overflow:hidden;
-  text-overflow:ellipsis;      /* ✅ 넘치면 말줄임 */
+  text-overflow:ellipsis;
   font-size:0.85rem;
 }
 
+/* 링크 버튼 */
 .rowline .link a{
   display:inline-block;
   padding:4px 10px;
@@ -55,7 +60,7 @@ for author, desc, link in rows:
     st.markdown(
         f"""
         <div class="rowline">
-          <div class="author">{author}</div>
+          <div class="author" title="{author}">{author}</div>
           <div class="desc" title="{desc}">{desc}</div>
           <div class="link"><a href="{link}" target="_blank">링크</a></div>
         </div>
