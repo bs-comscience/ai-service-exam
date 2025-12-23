@@ -18,7 +18,7 @@ html = """
 <table style="border-collapse: collapse;">
   <tr>
     <td style="
-        border: 2px solid #444;
+        border: 2px solid #cccccc;
         padding: 18px;
         width: 350px;
         background-color: #f8f8f8;
