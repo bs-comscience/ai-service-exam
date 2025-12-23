@@ -16,11 +16,28 @@ rows = [
     ("최학생", "OpenAI 홈페이지", "https://openai.com"),
 ]
 
+# 🔧 모바일 한 줄 유지용 CSS
+st.markdown("""
+<style>
+/* 텍스트 줄바꿈 방지 */
+div[data-testid="stMarkdownContainer"] p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.85rem;
+}
+
+/* link_button 최소화 */
+a[data-testid="stLinkButton"] {
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.75rem !important;
+    min-width: unset !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 for author, desc, link in rows:
-    col1, col2, col3 = st.columns(
-        [1.2, 2.8, 1],   # 👉 모바일 기준으로 비율 조정
-        gap="small"
-    )
-    col1.write(author)
-    col2.write(desc)
-    col3.link_button("이동", link)
+    c1, c2, c3 = st.columns([1, 3, 1], gap="small")
+    c1.write(author)
+    c2.write(desc)
+    c3.link_button("링크", link)
