@@ -11,14 +11,11 @@ st.write("융합탐구반 온라인 전시 사이트입니다.")
 
 st.markdown("""
 <style>
-/* link_button 스타일 고정 */
 a[data-testid="stLinkButton"] {
-    width: 220px !important;
-    height: 50px !important;
-    display: inline-flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    font-size: 16px !important;
+    width: 260px !important;
+    height: 60px !important;
+    font-size: 18px !important;
+    border-radius: 12px !important;
 }
 </style>
 """, unsafe_allow_html=True)
