@@ -9,6 +9,6 @@ st.set_page_config(
 
 
 st.link_button("인터넷 작명소", "https://www.naver.com")
-st.link_button("영어 문장 자동생성", "https://www.naver.com")
+st.link_button("영어 문장 자동 생성", "https://www.naver.com")
 st.link_button("화학....", "https://www.naver.com")
 st.link_button("남일사랑 Quiz~!", "https://www.naver.com")
