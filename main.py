@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 
-<a href="https://example.com" 
+<a href="https://ai-service-exam-avcnjfj9hoj79ldi7x96ba.streamlit.app" 
    oncopy="event.clipboardData.setData('text/plain', '융합탐구반 온라인 전시'); event.preventDefault();">
     융합탐구반 온라인 전시
 </a>
