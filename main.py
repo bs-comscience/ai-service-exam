@@ -18,19 +18,20 @@ html = """
 <table style="border-collapse: collapse;">
   <tr>
     <td style="
-        border: 2px solid #000;
-        padding: 15px;
-        width: 300px;
-        background-color: #ffffff;
-        font-size: 16px;
+        border: 2px solid #444;
+        padding: 18px;
+        width: 350px;
+        background-color: #f8f8f8;
+        border-radius: 8px;
     ">
-      여기에 설명을 적으세요.
+      ✔ 교사용 안내 설명을 적어넣는 표입니다.<br>
+      ✔ 여러 줄도 가능합니다.
     </td>
   </tr>
 </table>
 """
-
 st.markdown(html, unsafe_allow_html=True)
+
 
 rows = [
     ("1404 김예준", "원하는대로, 영어 문장 메이커", "https://generater-be5smgtamu2umwjqhgkltp.streamlit.app/"),
