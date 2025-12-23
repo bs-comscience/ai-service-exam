@@ -24,7 +24,7 @@ html = """
           border: 1px solid #cccccc;  /* 연한 테두리 */
           padding: 15px;
           background-color: #ffffff;
-          font-size: 16px;
+          font-size: 14px;
           text-align: center;        /* 텍스트 가운데 */
       ">
         여기에 설명을 적으세요.
