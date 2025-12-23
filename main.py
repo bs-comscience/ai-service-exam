@@ -7,7 +7,10 @@ st.set_page_config(
     page_icon="mark.png"
 )
 
-st.write("융합탐구반 온라인 전시 사이트입니다.")
+st.markdown(
+    "<div style='font-weight:600; font-size:1.1rem;'>융합탐구반 온라인 전시 사이트</div>",
+    unsafe_allow_html=True
+)
 
 rows = [
     ("1404 김예준", "영어 문장 자동 생성", "https://generater-be5smgtamu2umwjqhgkltp.streamlit.app/"),
