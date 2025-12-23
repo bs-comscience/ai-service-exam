@@ -15,22 +15,21 @@ st.markdown(
 )
 
 html = """
-<table style="border-collapse: collapse;">
-  <tr>
-    <td style="
-        border: 2px solid #cccccc;
-        padding: 18px;
-        width: 350px;
-        background-color: #f8f8f8;
-        border-radius: 8px;
-    ">
-      ✔ 교사용 안내 설명을 적어넣는 표입니다.<br>
-      ✔ 여러 줄도 가능합니다.
-    </td>
-  </tr>
-</table>
-"""
-st.markdown(html, unsafe_allow_html=True)
+<div style="display: flex; justify-content: center; margin-top: 10px; margin-bottom: 10px;">
+  <table style="border-collapse: collapse;">
+    <tr>
+      <td style="
+          border: 1px solid #cccccc;  /* 연한 테두리 */
+          padding: 15px;
+          width: 300px;
+          background-color: #ffffff;
+          font-size: 16px;
+          text-align: center;        /* 안의 글씨도 가운데 */
+      ">
+        여기에 설명을 적으세요.
+      </td>
+    </tr>
+  </table>
 
 
 rows = [
