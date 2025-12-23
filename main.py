@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 
 # 브라우저 제목 변경
 st.set_page_config(
