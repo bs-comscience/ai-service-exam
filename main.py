@@ -14,10 +14,23 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-import pandas as pd
+html = """
+<table style="border-collapse: collapse;">
+  <tr>
+    <td style="
+        border: 2px solid #000;
+        padding: 15px;
+        width: 300px;
+        background-color: #ffffff;
+        font-size: 16px;
+    ">
+      여기에 설명을 적으세요.
+    </td>
+  </tr>
+</table>
+"""
 
-df = pd.DataFrame([["ㄹㅇㄹㅇㄹ "]], columns=[" "])
-st.table(df)
+st.markdown(html, unsafe_allow_html=True)
 
 rows = [
     ("1404 김예준", "원하는대로, 영어 문장 메이커", "https://generater-be5smgtamu2umwjqhgkltp.streamlit.app/"),
