@@ -7,6 +7,7 @@ st.set_page_config(
     page_icon="mark.png"
 )
 
+st.write("융합탐구반 온라인 전시 사이트입니다.")
 
 st.link_button("인터넷 작명소", "https://www.naver.com")
 st.link_button("영어 문장 자동 생성", "https://www.naver.com")
