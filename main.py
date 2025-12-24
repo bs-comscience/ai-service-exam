@@ -25,7 +25,7 @@ html = """
           padding: 15px;
           background-color: #ffffff;
           font-size: 14px;
-          text-align: center;        /* 텍스트 가운데 */
+          text-align: left;        /* 텍스트 가운데 */
       ">
        ✔ 파이썬 기반으로 만든 웹 앱니다. <br>
        ✔ 남일 사랑 Test를 컴퓨터실습실에서 코드를 확인할 수 있습니다. (선착순 사은품 증정!)
