@@ -21,7 +21,7 @@ html = """
   <table style="border-collapse: collapse; width: 95%;">
     <tr>
       <td style="
-          border: 1px solid #cccccc;  /* 연한 테두리 */
+          border: 1px solid #E6F3FF;  /* 연한 테두리 */
           padding: 15px;
           background-color: #ffffff;
           font-size: 14px;
