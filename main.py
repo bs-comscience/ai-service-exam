@@ -18,7 +18,7 @@ import streamlit as st
 
 html = """
 <div style="display: flex; justify-content: center; margin-top: 10px; margin-bottom: 10px;">
-  <table style="border-collapse: collapse; width: 90%;">
+  <table style="border-collapse: collapse; width: 95%;">
     <tr>
       <td style="
           border: 1px solid #cccccc;  /* 연한 테두리 */
