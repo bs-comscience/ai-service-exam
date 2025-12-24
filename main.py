@@ -27,7 +27,7 @@ html = """
           font-size: 14px;
           text-align: left;        /* 텍스트 가운데 */
       ">
-       ✔  Chat GPT API로 AI 서비스를 구현하고 파이썬 기반으로 만든 웹 앱니다. <br>
+       ✔  Chat GPT API로 AI 서비스를 구현하고 파이썬 기반으로 만든 웹 앱입니다. <br>
        ✔  남일 사랑 Test를 시작하려면 코드가 필요합니다. (별관 2층 컴퓨터실습실, 선착순 사은품 증정~!!!)
       </td>
     </tr>
